@@ -3,13 +3,29 @@ package main
 import (
 	"bytes"
 	"encoding/json"
+	"io"
 	"net/http"
 	"net/http/httptest"
+	"os"
 	"testing"
 
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"
 )
+
+func TestMain(m *testing.M) {
+	// // Logging to a file.
+	f, _ := os.Create("server.log")
+	gin.DefaultWriter = io.MultiWriter(f)
+
+	var err error
+	dbmain, err = db()
+	if err != nil {
+		gin.DefaultErrorWriter.Write([]byte(err.Error()))
+	}
+	exitCode := m.Run()
+	os.Exit(exitCode)
+}
 
 func TestGetStudents(t *testing.T) {
 	// Create a test router

@@ -1,0 +1,40 @@
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /students                 --> github.com/themobileprof/go-students.GetStudents (3 handlers)
+[GIN] 2024/09/03 - 09:52:27 | 200 |     1.05204ms |                 | GET      "/students"
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /student                  --> github.com/themobileprof/go-students.PostStudent (3 handlers)
+[GIN] 2024/09/03 - 09:52:27 | 201 |   16.661904ms |                 | POST     "/student"
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /student/:id              --> github.com/themobileprof/go-students.GetStudent (3 handlers)
+[GIN] 2024/09/03 - 09:52:27 | 200 |     665.411µs |                 | GET      "/student/1"
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] PUT    /student/:id              --> github.com/themobileprof/go-students.PutStudent (3 handlers)
+[GIN] 2024/09/03 - 09:52:27 | 200 |     14.8372ms |                 | PUT      "/student/1"
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] DELETE /student/:id              --> github.com/themobileprof/go-students.DeleteStudent (3 handlers)
+[GIN] 2024/09/03 - 09:52:27 | 200 |      857.34µs |                 | DELETE   "/student/1"
